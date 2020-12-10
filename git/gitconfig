@@ -1,0 +1,12 @@
+[user]
+	name = Xuehong Huang
+	email = nathan.huang96@gmail.com
+[core]
+	editor = nvim
+	excludesfile = /home/nathan/.gitignore_global
+[pull]
+	rebase = false
+[credential]
+	helper = store
+[alias]
+  squash-all = "!f(){ git reset $(git commit-tree HEAD^{tree} -m \"${1:-A new start}\");};f"

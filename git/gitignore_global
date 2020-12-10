@@ -1,0 +1,63 @@
+# macOS hidden files
+.DS_Store
+
+# Vim swap files
+.*.sw?
+
+# Pow and Powder config
+/.pow*
+
+# RVM and rbenv
+/.rvmrc
+/.rbenv-version
+
+# Bundler binstubs
+/bin/
+
+# Vim
+/bundle
+/my_configs.vim
+
+# Pycache
+__pycache__/
+
+# Env
+# /.env
+
+# Virtual Environment
+venv/
+.venv/
+
+# Zshrc
+zshrc
+
+# VSCode setting
+.vscode/
+launch.json
+*.code-workspace
+
+# IDEA
+.idea/
+
+# Pylint setting
+.pylintrc
+
+# Pytest
+.pytest_cache/
+
+# Config
+falcon/config.py
+
+# Syncthing
+.stfolder/
+/.stignore
+
+# SQLite
+*.sqlite
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Env
+.env

@@ -1,0 +1,27 @@
+#!/usr/bin/env zsh
+# vim:syntax=zsh
+# vim:filetype=zsh
+
+# Proxy
+export http_proxy="http://127.0.0.1:7890"
+export https_proxy=$http_proxy
+export socks_proxy="socks5://127.0.0.1:7890"
+
+# Vim
+export EDITOR="nvim"
+
+# Flask
+export FLASK_RUN_PORT=6000
+export FLASK_APP="manage.py"
+export FLASK_DEBUG=1
+
+# Golang
+export GOPATH="$HOME/go"
+export GO111MODULE="on"
+export GOPROXY="https://goproxy.cn"
+
+# Local PATH
+export PATH="$PATH:$HOME/.local/bin"
+
+# VirtualenvWrapper
+export WORKON_HOME="$HOME/.virtualenvs"
