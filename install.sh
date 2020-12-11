@@ -28,3 +28,4 @@ $(which ln) -sf "$PWD/nvim" "$HOME/.config/nvim"
 
 # Python
 $(which ln) -sf "$PWD/python/pylintrc" "$HOME/.pylintrc"
+$(which ln) -sf "$PWD/python/flake8" "$HOME/.config/flake8"
