@@ -28,9 +28,6 @@ __pycache__/
 venv/
 .venv/
 
-# Zshrc
-zshrc
-
 # VSCode setting
 .vscode/
 launch.json
