@@ -80,4 +80,7 @@ Plug 'xavierd/clang_complete'
 " A better JSON for Vim: distinct highlighting of keywords vs values, JSON-specific (non-JS) warnings, quote concealing.
 Plug 'elzr/vim-json'
 
+" Searches for local vimrc files in the file system tree of the currently opened file
+Plug 'embear/vim-localvimrc'
+
 call plug#end()

@@ -17,6 +17,7 @@
 # Vim
 /bundle
 /my_configs.vim
+/.lvimrc
 
 # Pycache
 __pycache__/
