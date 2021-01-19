@@ -3,7 +3,7 @@
 	email = nathan.huang96@gmail.com
 [core]
 	editor = nvim
-	excludesfile = /home/nathan/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [pull]
 	rebase = false
 [credential]
