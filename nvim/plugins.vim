@@ -44,9 +44,6 @@ Plug 'mileszs/ack.vim'
 " Vim plugin for intensely orgasmic commenting
 Plug 'scrooloose/nerdcommenter'
 
-" Improved nginx vim plugin
-Plug 'chr4/nginx.vim'
-
 " A tree explorer plugin for vim.
 Plug 'scrooloose/nerdtree'
 
