@@ -30,7 +30,7 @@ set ignorecase
 set smartcase
 
 " Color
-set background=light
+" set background=light
 set termguicolors
 
 " Mouse
