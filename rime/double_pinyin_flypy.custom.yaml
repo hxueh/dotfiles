@@ -1,0 +1,52 @@
+patch:
+  switches:
+    - name: ascii_mode
+      reset: 0
+      states: [ 中文, 西文 ]
+    - name: full_shape
+      states: [ 半角, 全角 ]
+    - name: simplification
+      reset: 1
+      states: [ 漢字, 汉字 ]
+
+  'speller/algebra':
+    - "erase/^xx$/"
+# 模糊音
+# 加在「speller:algebra:」后面
+    - derive/^([zcs])h/$1/             # zh, ch, sh => z, c, s
+    - derive/^([zcs])([^h])/$1h$2/     # z, c, s => zh, ch, sh
+    - derive/([aei])n$/$1ng/           # an => ang,en => eng, in => ing
+    - derive/([aei])ng$/$1n/           # ang => an,eng => en, ing => in
+    - "derive/^([jqxy])u$/$1v/"
+    - "derive/^([aoe])([ioun])$/$1$1$2/"
+    - "xform/^([aoe])(ng)?$/$1$1$2/"
+    - "xform/iu$/Q/"
+    - "xform/(.)ei$/$1W/"
+    - "xform/uan$/R/"
+    - "xform/[uv]e$/T/"
+    - "xform/un$/Y/"
+    - "xform/^sh/U/"
+    - "xform/^ch/I/"
+    - "xform/^zh/V/"
+    - "xform/uo$/O/"
+    - "xform/ie$/P/"
+    - "xform/i?ong$/S/"
+    - "xform/ing$|uai$/K/"
+    - "xform/(.)ai$/$1D/"
+    - "xform/(.)en$/$1F/"
+    - "xform/(.)eng$/$1G/"
+    - "xform/[iu]ang$/L/"
+    - "xform/(.)ang$/$1H/"
+    - "xform/ian$/M/"
+    - "xform/(.)an$/$1J/"
+    - "xform/(.)ou$/$1Z/"
+    - "xform/[iu]a$/X/"
+    - "xform/iao$/N/"
+    - "xform/(.)ao$/$1C/"
+    - "xform/ui$/V/"
+    - "xform/in$/B/"
+    - "xlit/QWRTYUIOPSDFGHJKLZXCVBNM/qwrtyuiopsdfghjklzxcvbnm/"
+
+# 扩充词库
+  'translator/dictionary': luna_pinyin.extended
+  include: emoji_suggestion:/patch
