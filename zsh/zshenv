@@ -16,9 +16,6 @@ export GOPATH="$HOME/go"
 export GO111MODULE="on"
 export GOPROXY="https://goproxy.cn"
 
-# Rust
-export CARGO_TARGET_DIR="/tmp"
-
 # Local PATH
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$GOPATH/bin"
