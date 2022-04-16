@@ -131,10 +131,7 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
 # Make App open in certain workspace
-assign [class="LibreWolf"] $ws1
-assign [class="jetbrains-datagrip"] $ws4
-assign [class="Virt-manager"] $ws7
-assign [class="Spotify"] $ws10
+assign [class="Firefox"] $ws1
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
