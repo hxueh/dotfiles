@@ -88,6 +88,7 @@ plugins=(
     rust
     systemd
     virtualenvwrapper
+    vscode
     web-search
     zsh-autosuggestions
     zsh-syntax-highlighting
