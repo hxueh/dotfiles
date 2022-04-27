@@ -22,3 +22,4 @@ export PATH="$PATH:$GOPATH/bin"
 
 # VirtualenvWrapper
 export WORKON_HOME="$HOME/.virtualenvs"
+. "$HOME/.cargo/env"
