@@ -23,8 +23,8 @@ $(which ln) -sf "$PWD/git/gitignore_global" "$HOME/.gitignore_global"
 
 # i3
 $(which mkdir) -p "$HOME/.config"
-# $(which ln) -sf "$PWD/i3" "$HOME/.config/i3"
-# $(which ln) -sf "$PWD/i3status-rust" "$HOME/.config/i3status-rust"
+$(which ln) -sf "$PWD/i3" "$HOME/.config/i3"
+$(which ln) -sf "$PWD/i3status-rust" "$HOME/.config/i3status-rust"
 $(which ln) -sf "$PWD/nvim" "$HOME/.config/nvim"
 
 # Python

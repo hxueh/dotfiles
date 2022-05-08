@@ -29,9 +29,6 @@ format = "{1m}"
 block = "sound"
 
 [[block]]
-block = "backlight"
-
-[[block]]
 block = "net"
 format = "{speed_up;K} {speed_down;K}"
 interval = 5
@@ -40,7 +37,3 @@ interval = 5
 block = "time"
 interval = 5
 format = "%a %d/%m %R"
-
-[[block]]
-block = "battery"
-format = "{percentage} {time}"
