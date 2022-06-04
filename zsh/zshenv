@@ -22,3 +22,6 @@ export PATH="$PATH:$GOPATH/bin"
 
 # VirtualenvWrapper
 export WORKON_HOME="$HOME/.virtualenvs"
+
+# GPG
+export GPG_TTY=$(tty)
