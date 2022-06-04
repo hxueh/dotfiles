@@ -1,6 +1,7 @@
 [user]
-	name = Xuehong Huang
+	name = hxueh
 	email = nathan.huang96@gmail.com
+	signingkey = nathan.huang96@gmail.com
 [core]
 	editor = nvim
 	excludesfile = ~/.gitignore_global
