@@ -1,7 +1,7 @@
 [user]
 	name = hxueh
-	email = nathan.huang96@gmail.com
-	signingkey = nathan.huang96@gmail.com
+	email = hxueh@users.noreply.github.com
+	signingkey = hxueh@users.noreply.github.com
 [core]
 	editor = nvim
 	excludesfile = ~/.gitignore_global
@@ -11,3 +11,5 @@
 	helper = store
 [alias]
   squash-all = "!f(){ git reset $(git commit-tree HEAD^{tree} -m \"${1:-A new start}\");};f"
+[gpg]
+	program = gpg2
