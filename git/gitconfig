@@ -10,4 +10,7 @@
 [credential]
 	helper = store
 [alias]
-  squash-all = "!f(){ git reset $(git commit-tree HEAD^{tree} -m \"${1:-A new start}\");};f"
+    squash-all = "!f(){ git reset $(git commit-tree HEAD^{tree} -m \"${1:-A new start}\");};f"
+
+[init]
+	defaultBranch = main
