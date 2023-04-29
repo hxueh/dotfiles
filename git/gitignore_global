@@ -59,3 +59,7 @@ falcon/config.py
 
 # Env
 .env
+
+# Node
+/node_modules
+package-lock.json
