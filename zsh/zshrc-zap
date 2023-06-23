@@ -1,0 +1,29 @@
+# Created by Zap installer
+[ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
+
+plug "zsh-users/zsh-autosuggestions"
+plug "zap-zsh/supercharge"
+plug "zap-zsh/zap-prompt"
+plug "zsh-users/zsh-syntax-highlighting"
+plug "esc/conda-zsh-completion"
+plug "romkatv/powerlevel10k"
+plug "wintermi/zsh-brew"
+plug "hlissner/zsh-autopair"
+plug "wintermi/zsh-rust"
+plug "MichaelAquilina/zsh-you-should-use"
+plug "zsh-users/zsh-history-substring-search"
+plug "conda-incubator/conda-zsh-completion"
+plug "wintermi/zsh-golang"
+plug "zap-zsh/vim"
+plug "wintermi/zsh-lsd"
+plug "le0me55i/zsh-extract"
+plug "Freed-Wu/zsh-command-not-found"
+plug "nocttuam/autodotenv"
+plug "MichaelAquilina/zsh-autoswitch-virtualenv"
+
+
+source "$HOME/.p10k.zsh"
+
+# Load and initialise completion system
+autoload -Uz compinit
+compinit
