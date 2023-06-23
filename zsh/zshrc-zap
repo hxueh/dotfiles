@@ -18,6 +18,7 @@ plug "le0me55i/zsh-extract"
 plug "Freed-Wu/zsh-command-not-found"
 plug "nocttuam/autodotenv"
 plug "linnnus/autovenv"
+plug "chivalryq/git-alias"
 
 
 source "$HOME/.p10k.zsh"
