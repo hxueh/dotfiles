@@ -18,6 +18,8 @@ plug "le0me55i/zsh-extract"
 plug "Freed-Wu/zsh-command-not-found"
 plug "linnnus/autovenv"
 plug "chivalryq/git-alias"
+plug "zpm-zsh/colors"
+plug "zpm-zsh/autoenv"
 
 # Powerlevel10k
 source "$HOME/.p10k.zsh"
