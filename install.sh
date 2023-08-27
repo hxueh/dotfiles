@@ -15,7 +15,8 @@ $(which git) clone --depth=1 "https://github.com/romkatv/powerlevel10k.git" "$ZS
 # Zsh
 $(which ln) -sf "$PWD/zsh/zshrc" "$HOME/.zshrc"
 $(which ln) -sf "$PWD/zsh/zshenv" "$HOME/.zshenv"
-$(which ln) -sf "$PWD/zsh/p10k" "$HOME/.p10k"
+$(which ln) -sf "$PWD/zsh/p10k.zsh" "$HOME/.p10k.zsh"
+$(which ln) -sf "$PWD/zsh/conda.zsh" "$HOME/.conda.zsh"
 
 # Git
 $(which ln) -sf "$PWD/git/gitconfig" "$HOME/.gitconfig"

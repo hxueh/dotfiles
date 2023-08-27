@@ -23,6 +23,8 @@ plug "zpm-zsh/autoenv"
 
 # Powerlevel10k
 source "$HOME/.p10k.zsh"
+# Conda
+source "$HOME/.conda.zsh"
 
 # Alias
 alias python=python3
@@ -31,3 +33,4 @@ alias pip=pip3
 # Load and initialise completion system
 autoload -Uz compinit
 compinit
+
