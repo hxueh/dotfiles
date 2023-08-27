@@ -1,20 +1,13 @@
 #!/usr/bin/env zsh
 
-export {http_proxy,https_proxy}="http://127.0.0.1:7890"
+export {http_proxy,https_proxy}="http://192.168.0.12:7890"
 
-$(which sh) -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --skip-chsh --unattended
-
-ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
-
-$(which git) clone "https://github.com/zsh-users/zsh-completions" "$ZSH_CUSTOM/plugins/zsh-completions"
-$(which git) clone "https://github.com/zsh-users/zsh-history-substring-search" "$ZSH_CUSTOM/plugins/zsh-history-substring-search"
-$(which git) clone "https://github.com/zsh-users/zsh-autosuggestions" "$ZSH_CUSTOM/plugins/zsh-autosuggestions"
-$(which git) clone "https://github.com/zsh-users/zsh-syntax-highlighting.git" "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting"
-$(which git) clone --depth=1 "https://github.com/romkatv/powerlevel10k.git" "$ZSH_CUSTOM/themes/powerlevel10k"
+zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1
 
 # Zsh
 $(which ln) -sf "$PWD/zsh/zshrc" "$HOME/.zshrc"
 $(which ln) -sf "$PWD/zsh/zshenv" "$HOME/.zshenv"
+$(which ln) -sf "$PWD/zsh/zsh-zap" "$HOME/.zshrc"
 $(which ln) -sf "$PWD/zsh/p10k.zsh" "$HOME/.p10k.zsh"
 $(which ln) -sf "$PWD/zsh/conda.zsh" "$HOME/.conda.zsh"
 
