@@ -28,13 +28,6 @@ if [[ ! -f "$ZSH_SYNTAX_HIGHLIGHTING" ]]; then
 fi
 source "$ZSH_SYNTAX_HIGHLIGHTING"
 
-# zsh-autocomplete
-ZSH_AUTOCOMPLETE="$BREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh"
-if [[ ! -f "$ZSH_AUTOCOMPLETE" ]]; then
-    brew install zsh-autocomplete
-fi
-source "$ZSH_AUTOCOMPLETE"
-
 # zsh-history-substring-search
 ZSH_HISTORY_SUBSTRING_SEARCH="$BREW_PREFIX/share/zsh-history-substring-search/zsh-history-substring-search.zsh"
 if [[ ! -f "$ZSH_HISTORY_SUBSTRING_SEARCH" ]]; then
@@ -69,3 +62,12 @@ if [[ ! -f "$AUTOENV" ]]; then
     brew install autoenv
 fi
 source "$AUTOENV"
+
+# zsh-completions
+ZSH_COMPLETIONS_FOLDER="$BREW_PREFIX/share/zsh-completions"
+if [[ ! -d "$ZSH_COMPLETIONS_FOLDER" ]]; then
+    brew install zsh-completions
+fi
+FPATH=$ZSH_COMPLETIONS_FOLDER:$FPATH
+autoload -Uz compinit
+compinit
