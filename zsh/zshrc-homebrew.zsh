@@ -62,3 +62,12 @@ if [[ ! -f "$AUTOENV" ]]; then
     brew install autoenv
 fi
 source "$AUTOENV"
+
+# zsh-completions
+ZSH_COMPLETIONS_FOLDER="$BREW_PREFIX/share/zsh-completions"
+if [[ ! -d "$ZSH_COMPLETIONS_FOLDER" ]]; then
+    brew install zsh-completions
+fi
+FPATH=$ZSH_COMPLETIONS_FOLDER:$FPATH
+autoload -Uz compinit
+compinit
