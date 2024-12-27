@@ -1,5 +1,6 @@
 # Font
 font-family = "BlexMono Nerd Font"
+font-size = 16
 
 # Auto Update
 auto-update = "off"
