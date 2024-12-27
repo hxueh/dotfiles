@@ -1,1 +1,5 @@
+# Font
 font-family = "BlexMono Nerd Font"
+
+# Auto Update
+auto-update = "off"
