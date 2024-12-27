@@ -3,7 +3,7 @@ font-family = "BlexMono Nerd Font"
 font-size = 16
 
 # Theme
-theme = dark:catppuccin-frappe,light:catppuccin-latte
+theme = dark:Apple System Colors,light:Terminal Basic
 
 # Titlebar
 macos-titlebar-style = "native"
