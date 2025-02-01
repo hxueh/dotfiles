@@ -27,3 +27,5 @@
         helper = !$(which gh) auth git-credential
 [safe]
 	directory = *
+[commit]
+	gpgsign = true
