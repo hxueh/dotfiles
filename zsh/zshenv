@@ -7,7 +7,7 @@ export FLASK_APP="manage.py"
 export FLASK_DEBUG=1
 
 # Golang
-export GOPATH="$HOME/go"
+export GOPATH="$HOME/.gopath"
 export GO111MODULE="on"
 export GOPROXY="https://goproxy.cn"
 

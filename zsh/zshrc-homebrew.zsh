@@ -70,4 +70,9 @@ if [[ ! -d "$ZSH_COMPLETIONS_FOLDER" ]]; then
 fi
 FPATH=$ZSH_COMPLETIONS_FOLDER:$FPATH
 autoload -Uz compinit
+
+# Alias
+alias ls="lsd"
+alias claude="$HOME/.claude/local/claude"
+
 compinit
