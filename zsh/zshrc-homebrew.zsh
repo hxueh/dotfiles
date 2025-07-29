@@ -110,11 +110,11 @@ if [[ ! -f "$HOMEBREW_PREFIX/bin/rg" ]]; then
 fi
 alias grep="$HOMEBREW_PREFIX/bin/rg"
 
-# neovim
-if [[ ! -f "$HOMEBREW_PREFIX/bin/nvim" ]]; then
-    brew install neovim
+# helix
+if [[ ! -f "$HOMEBREW_PREFIX/bin/hx" ]]; then
+    brew install evil-helix
 fi
-alias vim="$HOMEBREW_PREFIX/bin/nvim"
+alias vim="$HOMEBREW_PREFIX/bin/hx"
 
 # tldr
 if [[ ! -f "$HOMEBREW_PREFIX/bin/tldr" ]]; then
