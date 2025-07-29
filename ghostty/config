@@ -1,12 +1,9 @@
 # Font
-font-family = "BlexMono Nerd Font"
-font-size = 16
+font-family = "Maple Mono NF CN"
+font-size = 18
 
 # Theme
 theme = dark:Apple System Colors,light:Terminal Basic
-
-# Titlebar
-macos-titlebar-style = "native"
 
 # Auto Update
 auto-update = "off"
