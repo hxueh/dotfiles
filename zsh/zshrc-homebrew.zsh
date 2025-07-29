@@ -92,11 +92,11 @@ if [[ ! -f "$HOMEBREW_PREFIX/bin/dust" ]]; then
 fi
 alias du="$HOMEBREW_PREFIX/bin/dust"
 
-# htop
-if [[ ! -f "$HOMEBREW_PREFIX/bin/htop" ]]; then
-    brew install -q htop
+# btop
+if [[ ! -f "$HOMEBREW_PREFIX/bin/btop" ]]; then
+    brew install -q btop
 fi
-alias top="$HOMEBREW_PREFIX/bin/htop"
+alias top="$HOMEBREW_PREFIX/bin/btop"
 
 # fd
 if [[ ! -f "$HOMEBREW_PREFIX/bin/fd" ]]; then
@@ -133,6 +133,24 @@ if [[ ! -f "$HOMEBREW_PREFIX/bin/curlie" ]]; then
     brew install -q curlie
 fi
 alias curl="$HOMEBREW_PREFIX/bin/curlie"
+
+# procs
+if [[ ! -f "$HOMEBREW_PREFIX/bin/procs" ]]; then
+    brew install -q procs
+fi
+alias ps="$HOMEBREW_PREFIX/bin/procs"
+
+# gomi
+if [[ ! -f "$HOMEBREW_PREFIX/bin/gomi" ]]; then
+    brew install -q gomi
+fi
+alias rm="$HOMEBREW_PREFIX/bin/gomi"
+
+# gping
+if [[ ! -f "$HOMEBREW_PREFIX/bin/gping" ]]; then
+    brew install -q gping
+fi
+alias ping="$HOMEBREW_PREFIX/bin/gping"
 
 autoload -Uz compinit
 compinit
