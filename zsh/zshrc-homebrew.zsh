@@ -56,6 +56,13 @@ if [[ ! -f "$ZSH_VI_MODE" ]]; then
 fi
 source "$ZSH_VI_MODE"
 
+# zsh-git-prompt
+ZSH_GIT_PROMPT="$BREW_PREFIX/opt/zsh-git-prompt/zshrc.sh"
+if [[ ! -f "$ZSH_GIT_PROMPT" ]]; then
+    brew install zsh-git-prompt
+fi
+source $ZSH_GIT_PROMPT
+
 # autoenv
 AUTOENV="$BREW_PREFIX/opt/autoenv/activate.sh"
 if [[ ! -f "$AUTOENV" ]]; then
@@ -70,9 +77,5 @@ if [[ ! -d "$ZSH_COMPLETIONS_FOLDER" ]]; then
 fi
 FPATH=$ZSH_COMPLETIONS_FOLDER:$FPATH
 autoload -Uz compinit
-
-# Alias
-alias ls="lsd"
-alias claude="$HOME/.claude/local/claude"
 
 compinit
