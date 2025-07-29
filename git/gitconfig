@@ -3,7 +3,7 @@
 	email = hxueh@users.noreply.github.com
 	signingkey = hxueh@users.noreply.github.com
 [core]
-	editor = nvim
+	editor = vim
 	excludesfile = ~/.gitignore_global
 [pull]
 	rebase = false
@@ -11,7 +11,6 @@
 	helper = store
 [alias]
     squash-all = "!f(){ git reset $(git commit-tree HEAD^{tree} -m \"${1:-A new start}\");};f"
-
 [init]
 	defaultBranch = main
 [filter "lfs"]
@@ -20,11 +19,9 @@
 	process = git-lfs filter-process
 	required = true
 [credential "https://github.com"]
-	helper = 
 	helper = !$(which gh) auth git-credential
 [credential "https://gist.github.com"]
-        helper =
-        helper = !$(which gh) auth git-credential
+    helper = !$(which gh) auth git-credential
 [safe]
 	directory = *
 [commit]
