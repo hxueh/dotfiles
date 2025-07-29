@@ -8,7 +8,7 @@
 [pull]
 	rebase = false
 [credential]
-	helper = store
+	helper = osxkeychain
 [alias]
     squash-all = "!f(){ git reset $(git commit-tree HEAD^{tree} -m \"${1:-A new start}\");};f"
 
