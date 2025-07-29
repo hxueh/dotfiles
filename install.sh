@@ -1,15 +1,9 @@
 #!/usr/bin/env zsh
 
-export {http_proxy,https_proxy}="http://192.168.0.12:7890"
-
-zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1
-
 # Zsh
-$(which ln) -sf "$PWD/zsh/zshrc" "$HOME/.zshrc"
+$(which ln) -sf "$PWD/zsh/zshrc-homebrew.zsh" "$HOME/.zshrc"
 $(which ln) -sf "$PWD/zsh/zshenv" "$HOME/.zshenv"
-$(which ln) -sf "$PWD/zsh/zsh-zap" "$HOME/.zshrc"
 $(which ln) -sf "$PWD/zsh/p10k.zsh" "$HOME/.p10k.zsh"
-$(which ln) -sf "$PWD/zsh/conda.zsh" "$HOME/.conda.zsh"
 
 # Git
 $(which ln) -sf "$PWD/git/gitconfig" "$HOME/.gitconfig"
