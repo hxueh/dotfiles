@@ -117,10 +117,10 @@ fi
 alias vim="$HOMEBREW_PREFIX/bin/hx"
 
 # tldr
-if [[ ! -f "$HOMEBREW_PREFIX/bin/tlrc" ]]; then
+if [[ ! -f "$HOMEBREW_PREFIX/bin/tldr" ]]; then
     brew install -q tlrc
 fi
-alias man="$HOMEBREW_PREFIX/bin/tlrc"
+alias man="$HOMEBREW_PREFIX/bin/tldr"
 
 # sd
 if [[ ! -f "$HOMEBREW_PREFIX/bin/sd" ]]; then
