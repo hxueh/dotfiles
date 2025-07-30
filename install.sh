@@ -1,5 +1,11 @@
 #!/usr/bin/env zsh
 
+# Create config folder
+$(which mkdir) -p "$HOME/.config"
+
+# Homebrew
+$(which ln) -sf "$PWD/homebrew" "$HOME/.config/homebrew"
+
 # Zsh
 $(which ln) -sf "$PWD/zsh/zshrc-homebrew.zsh" "$HOME/.zshrc"
 $(which ln) -sf "$PWD/zsh/zshenv" "$HOME/.zshenv"
@@ -10,7 +16,6 @@ $(which ln) -sf "$PWD/git/gitconfig" "$HOME/.gitconfig"
 $(which ln) -sf "$PWD/git/gitignore_global" "$HOME/.gitignore_global"
 
 # i3
-$(which mkdir) -p "$HOME/.config"
 $(which ln) -sf "$PWD/i3" "$HOME/.config/i3"
 $(which ln) -sf "$PWD/i3status-rust" "$HOME/.config/i3status-rust"
 
