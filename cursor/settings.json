@@ -1,0 +1,202 @@
+{
+  // workbench
+  "workbench.settings.editor": "json",
+  "workbench.preferredDarkColorTheme": "Default Dark Modern",
+  "workbench.preferredLightColorTheme": "Solarized Light",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.sideBar.location": "right",
+  "workbench.panel.defaultLocation": "bottom",
+  // window
+  "window.autoDetectColorScheme": true,
+  "window.title": "${activeEditorMedium}${separator}${rootPath}",
+  "window.closeWhenEmpty": false,
+  "window.titleBarStyle": "custom",
+  "window.restoreWindows": "folders",
+  "window.openFoldersInNewWindow": "on",
+  // update
+  "update.showReleaseNotes": false,
+  "update.mode": "manual",
+  // search
+  "search.quickOpen.includeHistory": false,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    "**/*_test.go": true,
+    "**/.git": true
+  },
+  // files
+  "files.autoSave": "afterDelay",
+  "files.autoGuessEncoding": true,
+  "files.trimFinalNewlines": true,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.git-crypt": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.stfolder": true,
+    "**/.stversions": true,
+    "**/.stignore": true,
+    "**/.stignore.real": true,
+    "**/.gopath": true,
+    "**/.goroot": true,
+    "**/CVS": true,
+    "**/.venv": true,
+    "launch.json": true,
+    "**/.idea": true,
+    "**/__pycache__": true,
+    "**/.pylintrc": true,
+    "**/*.pyc": true,
+    "**/.DS_Store": true,
+    "**/.pytest_cache": true,
+    "**/.scannerwork": true,
+    "**/vendor": true,
+    "**/target": true,
+    "**/.github": true,
+    "**/.vscode": true
+  },
+  // git
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.confirmEmptyCommits": false,
+  // editor
+  "editor.insertSpaces": true,
+  "editor.tabSize": 4,
+  "editor.detectIndentation": true,
+  "editor.fontSize": 18,
+  "editor.fontLigatures": true,
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 80,
+  "editor.rulers": [80, 120],
+  "editor.formatOnSave": true,
+  "editor.suggestSelection": "first",
+  "editor.fontFamily": "'Maple Mono NF CN', 'BlexMono Nerd Font', 'monospace'",
+  "editor.smoothScrolling": true,
+  "editor.tabCompletion": "onlySnippets",
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.semanticHighlighting.enabled": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.accessibilitySupport": "off",
+  "editor.inlineSuggest.enabled": true,
+  "editor.formatOnType": true,
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always"
+  },
+  // extensions
+  "extensions.ignoreRecommendations": true,
+  "extensions.closeExtensionDetailsOnViewChange": true,
+  "extensions.autoUpdate": "onlyEnabledExtensions",
+  // explorer
+  "explorer.autoReveal": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  // go
+  "go.addTags": {
+    "tags": "json,xml,db,redis,gorm,form",
+    "options": "json=omitempty,xml=omitempty",
+    "promptForTags": true,
+    "transform": "snakecase"
+  },
+  "go.formatTool": "default",
+  "go.useLanguageServer": true,
+  "go.inferGopath": false,
+  "gopls": {
+    "ui.completion.usePlaceholders": true
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "go.lintOnSave": "workspace",
+  "go.testFlags": ["-count=1", "-gcflags=all=-l"],
+  // python
+  "python.analysis.typeCheckingMode": "strict",
+  "python.analysis.autoImportCompletions": true,
+  "windsurfPyright.analysis.typeCheckingMode": "strict",
+  "isort.args": ["--profile", "black"],
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  // rust
+  "rust-analyzer.inlayHints.typeHints.enable": false,
+  "rust-analyzer.diagnostics.warningsAsHint": ["dead_code"],
+  // terminal
+  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.showExitAlert": false,
+  "terminal.integrated.macOptionIsMeta": true,
+  "terminal.integrated.fontFamily": "'Maple Mono NF CN', 'BlexMono Nerd Font', 'monospace'",
+  "terminal.integrated.shellIntegration.enabled": true,
+  "terminal.integrated.hideOnStartup": "whenEmpty",
+  // redhat
+  "redhat.telemetry.enabled": false,
+  // telemetry
+  "telemetry.telemetryLevel": "off",
+  // beancount
+  "beancount.mainBeanFile": "main.bean",
+  "beancount.instantAlignment": true,
+  "beancount.separatorColumn": 70,
+  "beancount.inputMethods": ["pinyin"],
+  "beancount.fixedCJKWidth": true,
+  // jupyter
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "jupyter.askForKernelRestart": false,
+  // typescript
+  "typescript.format.enable": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.format.semicolons": "insert",
+  // javascript
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // json
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // html
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // css
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // yaml
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // svg
+  "svg.preview.mode": "svg",
+  // gitlens
+  "gitlens.launchpad.indicator.enabled": false,
+  "gitlens.telemetry.enabled": false,
+  // cursor
+  "cursor.cpp.disabledLanguages": [
+    "plaintext",
+    "markdown",
+    "scminput",
+    "beancount"
+  ],
+  // codeium
+  "codeium.enableConfig": {
+    "*": true,
+    "beancount": false,
+    "bean": false
+  },
+  // Settings sync
+  "sync.quietSync": true,
+  "sync.autoUpload": true,
+  "sync.autoDownload": true,
+  // VS Icon
+  "vsicons.dontShowNewVersionMessage": true,
+  // LLDB
+  "lldb.suppressUpdateNotifications": true
+}
