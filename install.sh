@@ -13,8 +13,13 @@ $(which ln) -sf "$PWD/git/gitignore_global" "$HOME/.gitignore_global"
 $(which mkdir) -p "$HOME/.config"
 $(which ln) -sf "$PWD/i3" "$HOME/.config/i3"
 $(which ln) -sf "$PWD/i3status-rust" "$HOME/.config/i3status-rust"
+
+# Neovim
 $(which ln) -sf "$PWD/nvim" "$HOME/.config/nvim"
 
 # Python
 $(which ln) -sf "$PWD/python/pylintrc" "$HOME/.pylintrc"
 $(which ln) -sf "$PWD/python/flake8" "$HOME/.config/flake8"
+
+# gomi
+$(which ln) -sf "$PWD/gomi" "$HOME/.config/gomi"

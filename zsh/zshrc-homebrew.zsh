@@ -152,5 +152,23 @@ if [[ ! -f "$HOMEBREW_PREFIX/bin/gping" ]]; then
 fi
 alias ping="$HOMEBREW_PREFIX/bin/gping"
 
+# mycli
+if [[ ! -f "$HOMEBREW_PREFIX/bin/mycli" ]]; then
+    brew install -q mycli
+fi
+alias mysql="$HOMEBREW_PREFIX/bin/mycli"
+
+# pgcli
+if [[ ! -f "$HOMEBREW_PREFIX/bin/pgcli" ]]; then
+    brew install -q pgcli
+fi
+alias psql="$HOMEBREW_PREFIX/bin/pgcli"
+
+# iredis
+if [[ ! -f "$HOMEBREW_PREFIX/bin/iredis" ]]; then
+    brew install -q iredis
+fi
+alias redis="$HOMEBREW_PREFIX/bin/iredis"
+
 autoload -Uz compinit
 compinit
