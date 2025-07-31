@@ -14,7 +14,7 @@ $(which ln) -sf "$PWD/zsh/p10k.zsh" "$HOME/.p10k.zsh"
 
 # Git
 $(which ln) -sf "$PWD/git/gitconfig" "$HOME/.gitconfig"
-$(which ln) -sf "$PWD/git/gitignore_global" "$HOME/.gitignore_global"
+$(which ln) -sf "$PWD/git/gitignore" "$HOME/.gitignore_global"
 
 # Neovim
 $(which rm) -rf "$HOME/.config/nvim"
@@ -32,3 +32,7 @@ $(which ln) -sf "$PWD/cursor/snippets" "$HOME/Library/Application Support/Cursor
 
 # WakaTime
 $(which ln) -sf "$PWD/wakatime/wakatime.cfg" "$HOME/.wakatime.cfg"
+
+# GnuPG
+$(which mkdir) -p "$HOME/.gnupg"
+$(which ln) -sf "$PWD/gnupg/gpg-agent.conf" "$HOME/.gnupg/gpg-agent.conf"
