@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 
 # Create config folder
 $(which mkdir) -p "$HOME/.config"
