@@ -18,13 +18,6 @@ fi
 source "$POWERLEVEL10K"
 source "$HOME/.p10k.zsh"
 
-# [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-ZSH_SYNTAX_HIGHLIGHTING="$HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-if [[ ! -f "$ZSH_SYNTAX_HIGHLIGHTING" ]]; then
-    brew install -q zsh-syntax-highlighting
-fi
-source "$ZSH_SYNTAX_HIGHLIGHTING"
-
 # [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)
 ZSH_HISTORY_SUBSTRING_SEARCH="$HOMEBREW_PREFIX/share/zsh-history-substring-search/zsh-history-substring-search.zsh"
 if [[ ! -f "$ZSH_HISTORY_SUBSTRING_SEARCH" ]]; then
@@ -67,12 +60,19 @@ if [[ ! -f "$AUTOENV" ]]; then
 fi
 source "$AUTOENV"
 
+# [F-Sy-H](https://github.com/z-shell/F-Sy-H)
+ZSH_F_SY_H="$HOMEBREW_PREFIX/share/zsh-f-sy-h/F-Sy-H.plugin.zsh"
+if [[ ! -f "$ZSH_F_SY_H" ]]; then
+    brew install -q zsh-f-sy-h
+fi
+source "$ZSH_F_SY_H"
+
 # [zsh-completions](https://github.com/zsh-users/zsh-completions)
 ZSH_COMPLETIONS_FOLDER="$HOMEBREW_PREFIX/share/zsh-completions"
 if [[ ! -d "$ZSH_COMPLETIONS_FOLDER" ]]; then
     brew install -q zsh-completions
 fi
-FPATH=$ZSH_COMPLETIONS_FOLDER:$FPATH
+FPATH="$ZSH_COMPLETIONS_FOLDER:$FPATH"
 
 # lsd
 if [[ ! -f "$HOMEBREW_PREFIX/bin/lsd" ]]; then
@@ -133,6 +133,12 @@ if [[ ! -f "$HOMEBREW_PREFIX/bin/curlie" ]]; then
     brew install -q curlie
 fi
 alias curl="$HOMEBREW_PREFIX/bin/curlie"
+
+# wget2
+if [[ ! -f "$HOMEBREW_PREFIX/bin/wget2" ]]; then
+    brew install -q wget2
+fi
+alias wget="$HOMEBREW_PREFIX/bin/wget2"
 
 # procs
 if [[ ! -f "$HOMEBREW_PREFIX/bin/procs" ]]; then

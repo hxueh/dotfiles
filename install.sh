@@ -39,3 +39,6 @@ $(which ln) -sf "$PWD/cursor/settings.json" "$HOME/Library/Application Support/C
 $(which ln) -sf "$PWD/cursor/keybindings.json" "$HOME/Library/Application Support/Cursor/User/keybindings.json"
 $(which rm) -rf "$HOME/Library/Application Support/Cursor/User/snippets"
 $(which ln) -sf "$PWD/cursor/snippets" "$HOME/Library/Application Support/Cursor/User/snippets"
+
+# WakaTime
+$(which ln) -sf "$PWD/wakatime/wakatime.cfg" "$HOME/.wakatime.cfg"

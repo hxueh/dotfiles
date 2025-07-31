@@ -1,2 +1,3 @@
 zshenv filter=git-crypt diff=git-crypt
 Brewfile filter=git-crypt diff=git-crypt
+wakatime.cfg filter=git-crypt diff=git-crypt
