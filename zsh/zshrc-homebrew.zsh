@@ -181,6 +181,7 @@ compinit
 
 # Zsh config
 # History
+mkdir -p "$HOME/.local/share/zsh"
 export HISTFILE="$HOME/.local/share/zsh/history"
 export HISTSIZE=100000
 export SAVEHIST=100000
