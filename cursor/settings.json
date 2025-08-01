@@ -3,9 +3,11 @@
   "workbench.settings.editor": "json",
   "workbench.preferredDarkColorTheme": "Default Dark Modern",
   "workbench.preferredLightColorTheme": "Solarized Light",
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.productIconTheme": "material-product-icons",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "right",
   "workbench.panel.defaultLocation": "bottom",
+  "workbench.startupEditor": "terminal",
   // window
   "window.autoDetectColorScheme": true,
   "window.title": "${activeEditorMedium}${separator}${rootPath}",
@@ -40,8 +42,6 @@
     "**/.stversions": true,
     "**/.stignore": true,
     "**/.stignore.real": true,
-    "**/.gopath": true,
-    "**/.goroot": true,
     "**/CVS": true,
     "**/.venv": true,
     "launch.json": true,
@@ -111,9 +111,8 @@
   "go.lintOnSave": "workspace",
   "go.testFlags": ["-count=1", "-gcflags=all=-l"],
   // python
-  "python.analysis.typeCheckingMode": "strict",
-  "python.analysis.autoImportCompletions": true,
-  "windsurfPyright.analysis.typeCheckingMode": "strict",
+  "cursorpyright.analysis.autoImportCompletions": true,
+  "cursorpyright.analysis.typeCheckingMode": "strict",
   "isort.args": ["--profile", "black"],
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
@@ -130,8 +129,8 @@
   "terminal.integrated.hideOnStartup": "whenEmpty",
   // redhat
   "redhat.telemetry.enabled": false,
-  // telemetry
-  "telemetry.telemetryLevel": "off",
+  // Telemetry
+  "telemetry.feedback.enabled": false,
   // beancount
   "beancount.mainBeanFile": "main.bean",
   "beancount.instantAlignment": true,
@@ -143,7 +142,6 @@
     "default": "right",
     "jupyter-notebook": "left"
   },
-  "jupyter.askForKernelRestart": false,
   // typescript
   "typescript.format.enable": true,
   "[typescript]": {
@@ -173,8 +171,6 @@
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  // svg
-  "svg.preview.mode": "svg",
   // gitlens
   "gitlens.launchpad.indicator.enabled": false,
   "gitlens.telemetry.enabled": false,
@@ -185,18 +181,6 @@
     "scminput",
     "beancount"
   ],
-  // codeium
-  "codeium.enableConfig": {
-    "*": true,
-    "beancount": false,
-    "bean": false
-  },
-  // Settings sync
-  "sync.quietSync": true,
-  "sync.autoUpload": true,
-  "sync.autoDownload": true,
-  // VS Icon
-  "vsicons.dontShowNewVersionMessage": true,
-  // LLDB
-  "lldb.suppressUpdateNotifications": true
+  // Database client
+  "database-client.autoSync": true
 }
