@@ -3,10 +3,6 @@
 # Create config folder
 $(which mkdir) -p "$HOME/.config"
 
-# Homebrew
-$(which rm) -rf "$HOME/.config/homebrew"
-$(which ln) -sf "$PWD/homebrew" "$HOME/.config/homebrew"
-
 # Zsh
 $(which ln) -sf "$PWD/zsh/zshrc-homebrew.zsh" "$HOME/.zshrc"
 $(which ln) -sf "$PWD/zsh/zshenv" "$HOME/.zshenv"
