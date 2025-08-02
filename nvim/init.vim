@@ -193,8 +193,16 @@ autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "norm
 " Color Scheme & Appearance
 " =============================================================================
 
-" Enable 24-bit RGB colors
-if has('termguicolors')
+" Color scheme settings
+if $TERM_PROGRAM == 'Apple_Terminal'
+    " Auto-detect dark/light terminal and set appropriate theme
+    if &background == 'dark'
+        colorscheme evening
+    else
+        colorscheme morning
+    endif
+else
+    " Use true color for other terminals
     set termguicolors
 endif
 
