@@ -84,7 +84,7 @@ alias ls="$HOMEBREW_PREFIX/bin/lsd"
 if [[ ! -f "$HOMEBREW_PREFIX/bin/bat" ]]; then
     brew install -q bat
 fi
-alias cat="$HOMEBREW_PREFIX/bin/bat"
+alias cat="$HOMEBREW_PREFIX/bin/bat -p"
 
 # dust
 if [[ ! -f "$HOMEBREW_PREFIX/bin/dust" ]]; then
@@ -111,10 +111,10 @@ fi
 alias grep="$HOMEBREW_PREFIX/bin/rg"
 
 # helix
-if [[ ! -f "$HOMEBREW_PREFIX/bin/hx" ]]; then
-    brew install -q evil-helix
+if [[ ! -f "$HOMEBREW_PREFIX/bin/nvim" ]]; then
+    brew install -q neovim
 fi
-alias vim="$HOMEBREW_PREFIX/bin/hx"
+alias vim="$HOMEBREW_PREFIX/bin/nvim"
 
 # tldr
 if [[ ! -f "$HOMEBREW_PREFIX/bin/tldr" ]]; then
