@@ -3,16 +3,33 @@
 	email = hxueh@users.noreply.github.com
 	signingkey = hxueh@users.noreply.github.com
 [core]
-	editor = vim
+	editor = cursor --wait
 	excludesfile = ~/.gitignore_global
 [pull]
-	rebase = false
+	rebase = true
+[push]
+	default = simple
+	autoSetupRemote = true
+[rebase]
+    autoStash = true
+    autoSquash = true
+[branch]
+    autosetupmerge = always
+    autosetuprebase = always
 [credential]
 	helper = osxkeychain
 [alias]
     squash-all = "!f(){ git reset $(git commit-tree HEAD^{tree} -m \"${1:-A new start}\");};f"
+	sync = "!f() { git checkout main && git pull && git checkout - && git rebase main; }; f"
+	cleanup = "rebase -i main"
 [init]
 	defaultBranch = main
+[diff]
+	tool = cursor
+[difftool "cursor"]
+	cmd = cursor --wait --diff $LOCAL $REMOTE
+[mergetool "cursor"]
+	cmd = cursor --wait --merge $LOCAL $REMOTE $BASE $MERGED
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
