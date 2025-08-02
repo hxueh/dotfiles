@@ -1,0 +1,16 @@
+{
+  "cleanupPeriodDays": 90,
+  "includeCoAuthoredBy": true,
+  "permissions": {
+    "defaultMode": "acceptEdits",
+    "deny": [
+      "Bash(git push)",
+      "Bash(git branch -D)",
+      "Read(:*.bean)",
+      "Edit(:*.bean)",
+      "MultiEdit(:*.bean)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "env": { "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1" }
+}
