@@ -1,0 +1,14 @@
+{
+  "theme": "GitHub",
+  "telemetry": {
+    "enabled": false
+  },
+  "selectedAuthType": "oauth-personal",
+  "contextFileName": ["CLAUDE.md", "README.md"],
+  "autoAccept": true,
+  "vimMode": true,
+  "preferredEditor": "cursor",
+  "hideBanner": true,
+  "maxSessionTurns": 50,
+  "usageStatisticsEnabled": false
+}
