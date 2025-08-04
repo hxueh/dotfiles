@@ -84,7 +84,7 @@ alias ls="$HOMEBREW_PREFIX/bin/lsd"
 if [[ ! -f "$HOMEBREW_PREFIX/bin/bat" ]]; then
     brew install -q bat
 fi
-alias cat="$HOMEBREW_PREFIX/bin/bat -p"
+alias cat="$HOMEBREW_PREFIX/bin/bat -pp"
 
 # dust
 if [[ ! -f "$HOMEBREW_PREFIX/bin/dust" ]]; then
