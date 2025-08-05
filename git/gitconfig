@@ -14,7 +14,6 @@
     autoStash = true
     autoSquash = true
 [branch]
-    autosetupmerge = always
     autosetuprebase = always
 [credential]
 	helper = osxkeychain
