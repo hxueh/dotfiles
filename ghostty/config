@@ -7,3 +7,6 @@ theme = dark:Apple System Colors,light:Terminal Basic
 
 # Auto Update
 auto-update = "off"
+
+# Claude Code
+keybind = shift+enter=text:\n

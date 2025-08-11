@@ -4,9 +4,11 @@
     "enabled": false
   },
   "selectedAuthType": "oauth-personal",
-  "contextFileName": ["CLAUDE.md", "README.md"],
+  "contextFileName": [
+    "CLAUDE.md",
+    "README.md"
+  ],
   "autoAccept": true,
-  "vimMode": true,
   "preferredEditor": "cursor",
   "hideBanner": true,
   "maxSessionTurns": 50,

@@ -25,6 +25,10 @@ ln -sf "$PWD/nvim" "$HOME/.config/nvim"
 rm -rf "$HOME/.config/gomi"
 ln -sf "$PWD/gomi" "$HOME/.config/gomi"
 
+# Ghostty
+rm -rf "$HOME/.config/ghostty"
+ln -sf "$PWD/ghostty" "$HOME/.config/ghostty"
+
 # Cursor
 mkdir -p "$HOME/Library/Application Support/Cursor/User"
 ln -sf "$PWD/cursor/settings.json" "$HOME/Library/Application Support/Cursor/User/settings.json"
