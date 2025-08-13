@@ -175,12 +175,7 @@
   "gitlens.launchpad.indicator.enabled": false,
   "gitlens.telemetry.enabled": false,
   // cursor
-  "cursor.cpp.disabledLanguages": [
-    "plaintext",
-    "markdown",
-    "scminput",
-    "beancount"
-  ],
+  "cursor.cpp.disabledLanguages": ["plaintext", "scminput", "beancount"],
   // Database client
   "database-client.autoSync": true
 }
