@@ -78,8 +78,7 @@ FPATH="$ZSH_COMPLETIONS_FOLDER:$FPATH"
 if [[ ! -f "$HOMEBREW_PREFIX/bin/zoxide" ]]; then
     brew install -q zoxide
 fi
-eval "$($HOMEBREW_PREFIX/bin/zoxide init zsh)"
-alias cd="z"
+eval "$($HOMEBREW_PREFIX/bin/zoxide init zsh --cmd cd)"
 
 # lsd
 if [[ ! -f "$HOMEBREW_PREFIX/bin/lsd" ]]; then
