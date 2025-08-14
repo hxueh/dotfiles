@@ -30,6 +30,9 @@
 - Update README.md files when adding new features
 - Include usage examples for new functions/modules
 - Document breaking changes clearly
+- Use natural language descriptions instead of actual code implementation
+- When code is necessary, provide only function signatures with comments explaining what the code should do
+- Focus on explaining the purpose, behavior, and usage rather than showing implementation details
 
 ## Testing
 
