@@ -14,6 +14,6 @@
     ],
     "defaultMode": "acceptEdits"
   },
-  "model": "opus",
+  "model": "opusplan",
   "enableAllProjectMcpServers": true
 }
