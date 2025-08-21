@@ -17,10 +17,6 @@ ln -sf "$PWD/zsh/p10k.zsh" "$HOME/.p10k.zsh"
 ln -sf "$PWD/git/gitconfig" "$HOME/.gitconfig"
 ln -sf "$PWD/git/gitignore" "$HOME/.gitignore_global"
 
-# Neovim
-rm -rf "$HOME/.config/nvim"
-ln -sf "$PWD/nvim" "$HOME/.config/nvim"
-
 # gomi
 rm -rf "$HOME/.config/gomi"
 ln -sf "$PWD/gomi" "$HOME/.config/gomi"
