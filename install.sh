@@ -2,7 +2,7 @@
 
 # Install Homebrew
 if ! command -v brew >/dev/null 2>&1; then
-    /bin/bash -c "$(curl -fsSL https://cdn.jsdelivr.net/gh/Homebrew/install@master/install.sh)"
+  /bin/bash -c "$(curl -fsSL https://cdn.jsdelivr.net/gh/Homebrew/install@master/install.sh)"
 fi
 
 # Create config folder
@@ -47,6 +47,7 @@ ln -sf "$PWD/gnupg/gpg-agent.conf" "$HOME/.gnupg/gpg-agent.conf"
 mkdir -p "$HOME/.claude"
 ln -sf "$PWD/claude/settings.json" "$HOME/.claude/settings.json"
 ln -sf "$PWD/claude/CLAUDE.md" "$HOME/.claude/CLAUDE.md"
+ln -sf "$PWD/claude/statusline.sh" "$HOME/.claude/statusline.sh"
 
 # Gemini
 mkdir -p "$HOME/.gemini"
