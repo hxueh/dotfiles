@@ -54,7 +54,6 @@
     "**/.scannerwork": true,
     "**/vendor": true,
     "**/target": true,
-    "**/.github": true,
     "**/.vscode": true
   },
   // git
