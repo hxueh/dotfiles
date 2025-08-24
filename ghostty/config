@@ -1,9 +1,9 @@
 # Font
 font-family = "Maple Mono NF CN"
-font-size = 18
+font-size = 16
 
 # Theme
-theme = dark:Apple System Colors,light:Terminal Basic
+theme = dark:Apple System Colors,light:Builtin Solarized Light
 
 # Auto Update
 auto-update = "off"
