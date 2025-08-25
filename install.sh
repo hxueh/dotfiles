@@ -32,6 +32,10 @@ ln -sf "$PWD/cursor/keybindings.json" "$HOME/Library/Application Support/Cursor/
 rm -rf "$HOME/Library/Application Support/Cursor/User/snippets"
 ln -sf "$PWD/cursor/snippets" "$HOME/Library/Application Support/Cursor/User/snippets"
 
+# Neovim
+rm -rf "$HOME/.config/nvim"
+ln -sf "$PWD/nvim" "$HOME/.config/nvim"
+
 # WakaTime
 ln -sf "$PWD/wakatime/wakatime.cfg" "$HOME/.wakatime.cfg"
 
