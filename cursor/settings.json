@@ -110,9 +110,6 @@
   "go.lintOnSave": "workspace",
   "go.testFlags": ["-count=1", "-gcflags=all=-l"],
   // python
-  "cursorpyright.analysis.autoImportCompletions": true,
-  "cursorpyright.analysis.typeCheckingMode": "strict",
-  "isort.args": ["--profile", "black"],
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff"
   },
