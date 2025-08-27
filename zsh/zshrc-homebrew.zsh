@@ -1,3 +1,8 @@
+# Skip loading in Claude Code or Cursor Agent
+if [[ -n "$CLAUDECODE" || -n "$CURSOR_AGENT" ]]; then
+    return
+fi
+
 # First check if Homebrew is installed
 if ! command -v brew >/dev/null 2>&1; then
     /bin/bash -c "$(curl -fsSL https://cdn.jsdelivr.net/gh/Homebrew/install@master/install.sh)"
