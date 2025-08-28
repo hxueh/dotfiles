@@ -24,7 +24,6 @@
     "**/node_modules": true,
     "**/bower_components": true,
     "**/*.code-search": true,
-    "**/*_test.go": true,
     "**/.git": true
   },
   // files
