@@ -3,8 +3,9 @@
 	email = hxueh@users.noreply.github.com
 	signingkey = hxueh@users.noreply.github.com
 [core]
-	editor = cursor --wait
+	editor = vim
 	excludesfile = ~/.gitignore_global
+  pager = delta
 [pull]
 	rebase = true
 [push]
@@ -23,6 +24,10 @@
 	cleanup = "rebase -i main"
 [init]
 	defaultBranch = main
+[interactive]
+    diffFilter = delta --color-only
+[merge]
+    conflictStyle = zdiff3
 [diff]
 	tool = cursor
 [difftool "cursor"]
@@ -42,3 +47,9 @@
 	directory = *
 [commit]
 	gpgsign = true
+[delta]
+    navigate = true
+    side-by-side = true
+    line-numbers = true
+    hyperlinks = true
+    hyperlinks-file-link-format = "cursor://file/{path}:{line}"

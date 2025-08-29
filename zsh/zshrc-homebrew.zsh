@@ -187,6 +187,11 @@ if [[ ! -f "$HOMEBREW_PREFIX/bin/iredis" ]]; then
 fi
 alias redis="$HOMEBREW_PREFIX/bin/iredis"
 
+# delta
+if [[ ! -f "$HOMEBREW_PREFIX/bin/delta" ]]; then
+    brew install -q delta
+fi
+
 autoload -Uz compinit
 compinit
 

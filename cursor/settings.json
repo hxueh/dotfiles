@@ -122,6 +122,7 @@
   "terminal.integrated.fontFamily": "'Maple Mono NF CN', 'BlexMono Nerd Font', 'monospace'",
   "terminal.integrated.shellIntegration.enabled": true,
   "terminal.integrated.hideOnStartup": "whenEmpty",
+  "terminal.integrated.allowedLinkSchemes": ["file", "http", "https", "cursor"],
   // redhat
   "redhat.telemetry.enabled": false,
   // Telemetry
