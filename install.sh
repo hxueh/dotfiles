@@ -36,6 +36,9 @@ ln -sf "$PWD/cursor/snippets" "$HOME/Library/Application Support/Cursor/User/sni
 rm -rf "$HOME/.config/nvim"
 ln -sf "$PWD/nvim" "$HOME/.config/nvim"
 
+# Prettier
+ln -sf "$PWD/prettier/prettierrc.json" "$HOME/.prettierrc"
+
 # WakaTime
 ln -sf "$PWD/wakatime/wakatime.cfg" "$HOME/.wakatime.cfg"
 

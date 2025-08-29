@@ -137,36 +137,42 @@
     "default": "right",
     "jupyter-notebook": "left"
   },
-  // typescript
-  "typescript.format.enable": true,
+  // Typescript
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "typescript.format.semicolons": "insert",
-  // javascript
+  // Javascript
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  // json
+  // JSON
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  // html
+  // HTML
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  // css
+  // CSS
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  // yaml
+  // YAML
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  // gitlens
+  // Proto
+  "[proto3]": {
+    "editor.defaultFormatter": "zxh404.vscode-proto3"
+  },
+  // Shell
+  "[shellscript]": {
+    "editor.defaultFormatter": "mkhl.shfmt"
+  },
+  // Gitlens
   "gitlens.launchpad.indicator.enabled": false,
   "gitlens.telemetry.enabled": false,
   // cursor
