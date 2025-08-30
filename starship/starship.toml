@@ -1,0 +1,24 @@
+"$schema" = "https://starship.rs/config-schema.json"
+right_format = """$status$time"""
+
+[gcloud]
+disabled = true
+
+[package]
+disabled = true
+
+[git_metrics]
+disabled = false
+
+[memory_usage]
+disabled = false
+
+[os]
+disabled = false
+
+[status]
+disabled = false
+
+[time]
+disabled = false
+format = '[\[$time\]]($style)'

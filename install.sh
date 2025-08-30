@@ -13,6 +13,9 @@ ln -sf "$PWD/zsh/zshrc-homebrew.zsh" "$HOME/.zshrc"
 ln -sf "$PWD/zsh/zshenv" "$HOME/.zshenv"
 ln -sf "$PWD/zsh/p10k.zsh" "$HOME/.p10k.zsh"
 
+# Starship
+ln -sf "$PWD/starship/starship.toml" "$HOME/.config/starship.toml"
+
 # Git
 ln -sf "$PWD/git/gitconfig" "$HOME/.gitconfig"
 ln -sf "$PWD/git/gitignore" "$HOME/.gitignore_global"

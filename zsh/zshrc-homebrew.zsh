@@ -15,14 +15,6 @@ if [[ ! -f "$ZSH_AUTOSUGGESTIONS" ]]; then
 fi
 source "$ZSH_AUTOSUGGESTIONS"
 
-# [powerlevel10k](https://github.com/romkatv/powerlevel10k)
-POWERLEVEL10K="$HOMEBREW_PREFIX/share/powerlevel10k/powerlevel10k.zsh-theme"
-if [[ ! -f "$POWERLEVEL10K" ]]; then
-    brew install -q powerlevel10k
-fi
-source "$POWERLEVEL10K"
-source "$HOME/.p10k.zsh"
-
 # [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)
 ZSH_HISTORY_SUBSTRING_SEARCH="$HOMEBREW_PREFIX/share/zsh-history-substring-search/zsh-history-substring-search.zsh"
 if [[ ! -f "$ZSH_HISTORY_SUBSTRING_SEARCH" ]]; then
@@ -57,6 +49,12 @@ if [[ ! -f "$ZSH_GIT_PROMPT" ]]; then
     brew install -q zsh-git-prompt
 fi
 source $ZSH_GIT_PROMPT
+
+# starship
+if [[ ! -f "$HOMEBREW_PREFIX/bin/starship" ]]; then
+    brew install -q starship
+fi
+eval "$(starship init zsh)"
 
 # autoenv
 AUTOENV="$HOMEBREW_PREFIX/opt/autoenv/activate.sh"

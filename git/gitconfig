@@ -5,7 +5,7 @@
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
-  pager = delta
+    pager = delta
 [pull]
 	rebase = true
 [push]
