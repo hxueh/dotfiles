@@ -135,7 +135,10 @@ alias man="$HOMEBREW_PREFIX/bin/tldr"
 if [[ ! -f "$HOMEBREW_PREFIX/bin/sd" ]]; then
     brew install -q sd
 fi
-alias sed="$HOMEBREW_PREFIX/bin/sd"
+# Set sed alias only when NOT in VSCode shell integration
+if [[ -z "$VSCODE_INJECTION" ]]; then
+    alias sed="$HOMEBREW_PREFIX/bin/sd"
+fi
 
 # curlie
 if [[ ! -f "$HOMEBREW_PREFIX/bin/curlie" ]]; then
