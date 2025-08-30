@@ -119,7 +119,7 @@ if [[ ! -f "$HOMEBREW_PREFIX/bin/rg" ]]; then
 fi
 alias grep="$HOMEBREW_PREFIX/bin/rg"
 
-# helix
+# neovim
 if [[ ! -f "$HOMEBREW_PREFIX/bin/nvim" ]]; then
     brew install -q neovim
 fi
@@ -130,15 +130,6 @@ if [[ ! -f "$HOMEBREW_PREFIX/bin/tldr" ]]; then
     brew install -q tlrc
 fi
 alias man="$HOMEBREW_PREFIX/bin/tldr"
-
-# sd
-if [[ ! -f "$HOMEBREW_PREFIX/bin/sd" ]]; then
-    brew install -q sd
-fi
-# Set sed alias only when NOT in VSCode shell integration
-if [[ -z "$VSCODE_INJECTION" ]]; then
-    alias sed="$HOMEBREW_PREFIX/bin/sd"
-fi
 
 # curlie
 if [[ ! -f "$HOMEBREW_PREFIX/bin/curlie" ]]; then
