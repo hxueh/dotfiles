@@ -11,7 +11,6 @@ mkdir -p "$HOME/.config"
 # Zsh
 ln -sf "$PWD/zsh/zshrc-homebrew.zsh" "$HOME/.zshrc"
 ln -sf "$PWD/zsh/zshenv" "$HOME/.zshenv"
-ln -sf "$PWD/zsh/p10k.zsh" "$HOME/.p10k.zsh"
 
 # Starship
 ln -sf "$PWD/starship/starship.toml" "$HOME/.config/starship.toml"
