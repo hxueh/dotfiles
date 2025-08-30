@@ -173,6 +173,7 @@
   "[shellscript]": {
     "editor.defaultFormatter": "mkhl.shfmt"
   },
+  "shellcheck.customArgs": ["--external-sources"],
   // Gitlens
   "gitlens.launchpad.indicator.enabled": false,
   "gitlens.telemetry.enabled": false,
