@@ -5,13 +5,7 @@
   },
   "includeCoAuthoredBy": true,
   "permissions": {
-    "deny": [
-      "Bash(git push)",
-      "Bash(git branch -D)",
-      "Read(*.bean)",
-      "Edit(*.bean)",
-      "MultiEdit(*.bean)"
-    ],
+    "deny": ["Read(*.bean)", "Edit(*.bean)", "MultiEdit(*.bean)"],
     "defaultMode": "acceptEdits"
   },
   "enableAllProjectMcpServers": true,

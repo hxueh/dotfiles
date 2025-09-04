@@ -1,6 +1,5 @@
 return {
-  "greggh/claude-code.nvim",
-  config = function()
-    require("claude-code").setup()
-  end,
+  "coder/claudecode.nvim",
+  dependencies = { "folke/snacks.nvim" },
+  config = true,
 }
