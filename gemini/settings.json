@@ -4,10 +4,7 @@
     "enabled": false
   },
   "selectedAuthType": "oauth-personal",
-  "contextFileName": [
-    "CLAUDE.md",
-    "README.md"
-  ],
+  "contextFileName": ["CLAUDE.md", "README.md", "AGENT.md", "GEMINI.md"],
   "autoAccept": true,
   "preferredEditor": "cursor",
   "hideBanner": true,
