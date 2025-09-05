@@ -50,11 +50,13 @@ if [[ ! -f "$ZSH_GIT_PROMPT" ]]; then
 fi
 source $ZSH_GIT_PROMPT
 
-# starship
-if [[ ! -f "$HOMEBREW_PREFIX/bin/starship" ]]; then
-    brew install -q starship
+# starship - only load if not using WarpTerminal
+if [[ "$TERM_PROGRAM" != "WarpTerminal" ]]; then
+    if [[ ! -f "$HOMEBREW_PREFIX/bin/starship" ]]; then
+        brew install -q starship
+    fi
+    eval "$(starship init zsh)"
 fi
-eval "$(starship init zsh)"
 
 # autoenv
 AUTOENV="$HOMEBREW_PREFIX/opt/autoenv/activate.sh"
