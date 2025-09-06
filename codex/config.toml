@@ -1,0 +1,21 @@
+profile = "moonshot"
+hide_agent_reasoning = true
+preferred_auth_method = "apikey"
+
+[profiles.deepseek]
+model = "deepseek-reasoner"
+model_provider = "deepseek"
+
+[profiles.moonshot]
+model = "kimi-k2-0905-preview"
+model_provider = "moonshot"
+
+[model_providers.deepseek]
+name = "Deepseek Offical API"
+base_url = "https://api.deepseek.com/v1"
+env_key = "DEEPSEEK_API_KEY"
+
+[model_providers.moonshot]
+name = "Moonshot Offical API"
+base_url = "https://api.moonshot.cn/v1"
+env_key = "MOONSHOT_API_KEY"
