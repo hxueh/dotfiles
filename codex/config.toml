@@ -1,6 +1,6 @@
 profile = "moonshot"
 hide_agent_reasoning = true
-preferred_auth_method = "apikey"
+preferred_auth_method = "chatgpt"
 
 [profiles.deepseek]
 model = "deepseek-reasoner"
