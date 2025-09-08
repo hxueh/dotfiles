@@ -1,4 +1,3 @@
-profile = "moonshot"
 hide_agent_reasoning = true
 preferred_auth_method = "chatgpt"
 
