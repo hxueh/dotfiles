@@ -58,7 +58,9 @@ ln -sf "$PWD/claude/statusline.sh" "$HOME/.claude/statusline.sh"
 # Gemini
 mkdir -p "$HOME/.gemini"
 ln -sf "$PWD/gemini/settings.json" "$HOME/.gemini/settings.json"
+ln -sf "$PWD/claude/CLAUDE.md" "$HOME/.gemini/AGENTS.md"
 
 # Codex
 mkdir -p "$HOME/.config/codex"
 ln -sf "$PWD/codex/config.toml" "$HOME/.config/codex/config.toml"
+ln -sf "$PWD/claude/CLAUDE.md" "$HOME/.config/codex/AGENTS.md"
