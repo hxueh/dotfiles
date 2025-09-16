@@ -77,7 +77,6 @@ ZSH_COMPLETIONS_FOLDER="$HOMEBREW_PREFIX/share/zsh-completions"
 if [[ ! -d "$ZSH_COMPLETIONS_FOLDER" ]]; then
     brew install -q zsh-completions
 fi
-FPATH="$ZSH_COMPLETIONS_FOLDER:$FPATH"
 
 # zoxide
 if [[ ! -f "$HOMEBREW_PREFIX/bin/zoxide" ]]; then
@@ -187,6 +186,7 @@ if [[ ! -f "$HOMEBREW_PREFIX/bin/delta" ]]; then
     brew install -q delta
 fi
 
+export FPATH="$ZSH_COMPLETIONS_FOLDER:${FPATH}"
 autoload -Uz compinit
 compinit
 
