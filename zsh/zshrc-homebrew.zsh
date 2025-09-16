@@ -85,11 +85,12 @@ if [[ ! -f "$HOMEBREW_PREFIX/bin/zoxide" ]]; then
 fi
 eval "$($HOMEBREW_PREFIX/bin/zoxide init zsh --cmd cd)"
 
-# lsd
-if [[ ! -f "$HOMEBREW_PREFIX/bin/lsd" ]]; then
-    brew install -q lsd
+# eza
+if [[ ! -f "$HOMEBREW_PREFIX/bin/eza" ]]; then
+    brew install -q eza
 fi
-alias ls="$HOMEBREW_PREFIX/bin/lsd"
+alias ls="$HOMEBREW_PREFIX/bin/eza"
+export EZA_ICONS_AUTO="1"
 
 # bat
 if [[ ! -f "$HOMEBREW_PREFIX/bin/bat" ]]; then

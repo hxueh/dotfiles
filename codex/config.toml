@@ -1,5 +1,6 @@
 hide_agent_reasoning = true
 preferred_auth_method = "chatgpt"
+model = "gpt-5-codex"
 
 [profiles.deepseek]
 model = "deepseek-reasoner"
