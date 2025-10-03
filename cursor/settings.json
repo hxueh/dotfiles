@@ -179,6 +179,7 @@
   "gitlens.telemetry.enabled": false,
   // cursor
   "cursor.cpp.disabledLanguages": ["plaintext", "scminput", "beancount"],
+  "cursor.composer.queueMessageDefaultBehavior": "stop-and-send",
   // Database client
   "database-client.autoSync": true,
   // Lua
