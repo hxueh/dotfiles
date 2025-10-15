@@ -3,10 +3,15 @@ preferred_auth_method = "chatgpt"
 model = "gpt-5-codex"
 file_opener = "cursor"
 model_reasoning_effort = "high"
-approval_policy = "never"
+approval_policy = "on-request"
+show_raw_agent_reasoning = false
 
 [tui]
 notifications = true
+
+[shell_environment_policy]
+inherit = "core"
+ignore_default_excludes = true
 
 [profiles.deepseek]
 model = "deepseek-reasoner"
