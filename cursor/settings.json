@@ -165,10 +165,6 @@
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  // Proto
-  "[proto3]": {
-    "editor.defaultFormatter": "zxh404.vscode-proto3"
-  },
   // Shell
   "[shellscript]": {
     "editor.defaultFormatter": "mkhl.shfmt"
@@ -178,7 +174,7 @@
   "gitlens.launchpad.indicator.enabled": false,
   "gitlens.telemetry.enabled": false,
   // cursor
-  "cursor.cpp.disabledLanguages": ["plaintext", "scminput", "beancount"],
+  "cursor.cpp.disabledLanguages": ["beancount"],
   "cursor.composer.queueMessageDefaultBehavior": "stop-and-send",
   // Database client
   "database-client.autoSync": true,
