@@ -1,6 +1,12 @@
 hide_agent_reasoning = true
 preferred_auth_method = "chatgpt"
 model = "gpt-5-codex"
+file_opener = "cursor"
+model_reasoning_effort = "high"
+approval_policy = "never"
+
+[tui]
+notifications = true
 
 [profiles.deepseek]
 model = "deepseek-reasoner"
