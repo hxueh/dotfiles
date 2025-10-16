@@ -127,12 +127,6 @@
   "redhat.telemetry.enabled": false,
   // Telemetry
   "telemetry.feedback.enabled": false,
-  // beancount
-  "beancount.mainBeanFile": "main.bean",
-  "beancount.instantAlignment": true,
-  "beancount.separatorColumn": 70,
-  "beancount.inputMethods": ["pinyin"],
-  "beancount.fixedCJKWidth": true,
   // jupyter
   "notebook.cellToolbarLocation": {
     "default": "right",
