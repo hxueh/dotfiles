@@ -17,7 +17,7 @@
   "window.openFoldersInNewWindow": "on",
   // update
   "update.showReleaseNotes": false,
-  "update.mode": "manual",
+  "update.mode": "none",
   // search
   "search.quickOpen.includeHistory": false,
   "search.exclude": {
