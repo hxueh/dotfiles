@@ -1,18 +1,17 @@
 {
-  "cleanupPeriodDays": 90,
+  "cleanupPeriodDays": 10,
   "env": {
     "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
     "DISABLE_AUTOUPDATER": "1"
   },
-  "includeCoAuthoredBy": true,
   "permissions": {
     "deny": ["Read(*.bean)", "Edit(*.bean)", "MultiEdit(*.bean)"],
-    "defaultMode": "acceptEdits"
+    "defaultMode": "plan"
   },
+  "model": "opusplan",
   "enableAllProjectMcpServers": true,
   "statusLine": {
     "type": "command",
     "command": "~/.claude/statusline.sh"
-  },
-  "alwaysThinkingEnabled": true
+  }
 }
