@@ -7,6 +7,3 @@ theme = dark:Apple System Colors,light:Builtin Solarized Light
 
 # Auto Update
 auto-update = "off"
-
-# Claude Code
-keybind = shift+enter=text:\n

@@ -5,10 +5,13 @@
     "DISABLE_AUTOUPDATER": "1"
   },
   "permissions": {
-    "deny": ["Read(*.bean)", "Edit(*.bean)", "MultiEdit(*.bean)"],
+    "deny": [
+      "Read(*.bean)",
+      "Edit(*.bean)",
+      "MultiEdit(*.bean)"
+    ],
     "defaultMode": "plan"
   },
-  "model": "opusplan",
   "enableAllProjectMcpServers": true,
   "statusLine": {
     "type": "command",
