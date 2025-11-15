@@ -50,6 +50,7 @@ ln -sf "$PWD/gnupg/gpg-agent.conf" "$HOME/.gnupg/gpg-agent.conf"
 
 # Claude Code
 mkdir -p "$HOME/.claude"
+sh "$PWD/claude/onboarding.sh"
 ln -sf "$PWD/claude/settings.json" "$HOME/.claude/settings.json"
 ln -sf "$PWD/claude/CLAUDE.md" "$HOME/.claude/CLAUDE.md"
 ln -sf "$PWD/claude/statusline.sh" "$HOME/.claude/statusline.sh"
