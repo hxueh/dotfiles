@@ -42,7 +42,14 @@ A comprehensive collection of my personal dotfiles and development environment c
 
 - macOS (tested on macOS 14+)
 - Git
+- [GNU Stow](https://www.gnu.org/software/stow/)
 - Administrator privileges (for Homebrew installation)
+
+> **Tip:** On macOS you can install Stow with Homebrew:
+>
+> ```bash
+> brew install stow
+> ```
 
 ### Installation
 
@@ -53,12 +60,16 @@ A comprehensive collection of my personal dotfiles and development environment c
    cd dotfiles
    ```
 
-2. **Run the installation script**:
+2. **Run the installation script** (handles Stow packages and supporting tools):
 
    ```bash
    chmod +x install.sh
    ./install.sh
    ```
+
+   The script will install Homebrew (if needed) and stow all package directories in this repository into place under `$HOME`.
+
+   > Prefer a manual workflow? You can invoke Stow directly, e.g. `stow zsh starship git` to link only those packages.
 
 3. **Install Homebrew packages**:
 
@@ -72,20 +83,25 @@ A comprehensive collection of my personal dotfiles and development environment c
 
 ```
 dotfiles/
+├── claude/              # Claude Code assistant configuration
+├── codex/               # Codex CLI configuration
 ├── cursor/              # Cursor IDE configuration
+├── gemini/              # Google Gemini CLI configuration
 ├── ghostty/             # Ghostty terminal configuration
 ├── git/                 # Git global configuration
+├── gnupg/               # GnuPG agent configuration
 ├── gomi/                # Safe file deletion tool config
 ├── homebrew/            # Homebrew package definitions
 ├── i3/                  # i3 window manager configuration
 ├── i3status-rust/       # i3 status bar configuration
 ├── nvim/                # Neovim configuration
-├── python/              # Python linting configuration
+├── prettier/            # Prettier shared configuration
 ├── rime/                # RIME input method configuration
+├── starship/            # Starship prompt configuration
 ├── wakatime/            # WakaTime configuration
 ├── zsh/                 # Zsh shell configuration
 ├── install.sh           # Installation script
-└── README.md           # This file
+└── README.md            # This file
 ```
 
 ## 🔧 Key Configurations
@@ -137,9 +153,16 @@ dotfiles/
 
 ### Adding New Tools
 
-1. Create a new directory for the tool's configuration
-2. Add symlink commands to `install.sh`
-3. Update this README with the new tool
+1. Create a new directory at the repository root that contains the files you want to manage (this becomes a Stow package).
+2. Inside that directory, mirror the destination paths relative to your home directory (e.g. `zsh/.zshrc`).
+3. Run `stow <package-name>` (or rerun `install.sh`) to link the files into your environment.
+4. Update this README with the new tool so others know it exists.
+
+### Using Stow Directly
+
+- **Stow a package**: `stow <package>` (e.g. `stow git`) to create symlinks in your home directory.
+- **Unstow a package**: `stow -D <package>` to remove the symlinks for that package.
+- **Restow a package**: `stow -R <package>` to refresh links after making changes.
 
 ## 🔄 Maintenance
 
