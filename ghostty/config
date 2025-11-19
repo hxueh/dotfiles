@@ -3,7 +3,13 @@ font-family = "Maple Mono NF CN"
 font-size = 16
 
 # Theme
-theme = dark:Apple System Colors,light:Builtin Solarized Light
+theme = dark:Apple System Colors,light:Apple System Colors Light
 
 # Auto Update
-auto-update = "off"
+auto-update = off
+
+# Command
+command = /opt/homebrew/bin/zsh
+
+# Icon
+macos-icon = chalkboard
