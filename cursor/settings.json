@@ -167,12 +167,11 @@
   // Gitlens
   "gitlens.launchpad.indicator.enabled": false,
   "gitlens.telemetry.enabled": false,
-  // cursor
-  "cursor.cpp.disabledLanguages": ["beancount"],
-  "cursor.composer.queueMessageDefaultBehavior": "stop-and-send",
-  // Antigravity
-  "antigravity.marketplaceExtensionGalleryServiceURL": "https://marketplace.visualstudio.com/_apis/public/gallery",
-  "antigravity.marketplaceGalleryItemURL": "https://marketplace.visualstudio.com/items",
+  // Vim
+  "vim.enableNeovim": true,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
   // Database client
   "database-client.autoSync": true,
   // Lua
@@ -181,5 +180,11 @@
     "indent_size": "2",
     "quote_style": "double",
     "max_line_length": "120"
-  }
+  },
+  // cursor
+  "cursor.cpp.disabledLanguages": ["beancount"],
+  "cursor.composer.queueMessageDefaultBehavior": "stop-and-send",
+  // Antigravity
+  "antigravity.marketplaceExtensionGalleryServiceURL": "https://marketplace.visualstudio.com/_apis/public/gallery",
+  "antigravity.marketplaceGalleryItemURL": "https://marketplace.visualstudio.com/items"
 }
