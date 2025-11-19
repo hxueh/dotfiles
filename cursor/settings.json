@@ -170,6 +170,9 @@
   // cursor
   "cursor.cpp.disabledLanguages": ["beancount"],
   "cursor.composer.queueMessageDefaultBehavior": "stop-and-send",
+  // Antigravity
+  "antigravity.marketplaceExtensionGalleryServiceURL": "https://marketplace.visualstudio.com/_apis/public/gallery",
+  "antigravity.marketplaceGalleryItemURL": "https://marketplace.visualstudio.com/items",
   // Database client
   "database-client.autoSync": true,
   // Lua

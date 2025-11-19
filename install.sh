@@ -34,6 +34,10 @@ ln -sf "$PWD/cursor/keybindings.json" "$HOME/Library/Application Support/Cursor/
 rm -rf "$HOME/Library/Application Support/Cursor/User/snippets"
 ln -sf "$PWD/cursor/snippets" "$HOME/Library/Application Support/Cursor/User/snippets"
 
+# Antigravity
+mkdir -p "$HOME/Library/Application Support/Antigravity/User"
+ln -sf "$PWD/cursor/settings.json" "$HOME/Library/Application Support/Antigravity/User/settings.json"
+
 # Neovim
 rm -rf "$HOME/.config/nvim"
 ln -sf "$PWD/nvim" "$HOME/.config/nvim"
