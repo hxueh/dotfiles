@@ -1,13 +1,41 @@
 {
-  "theme": "GitHub",
+  "tools": {
+    "autoAccept": true
+  },
+  "context": {
+    "fileName": ["AGENTS.md"]
+  },
+  "ui": {
+    "hideBanner": true,
+    "theme": "GitHub",
+    "hideTips": true,
+    "hideContextSummary": true,
+    "showMemoryUsage": true,
+    "accessibility": {
+      "disableLoadingPhrases": true
+    }
+  },
+  "model": {
+    "maxSessionTurns": 50,
+    "compressionThreshold": 0.5
+  },
+  "general": {
+    "preferredEditor": "cursor",
+    "disableAutoUpdate": true,
+    "enablePromptCompletion": true
+  },
+  "security": {
+    "auth": {
+      "selectedType": "oauth-personal"
+    }
+  },
   "telemetry": {
     "enabled": false
   },
-  "selectedAuthType": "oauth-personal",
-  "contextFileName": ["AGENTS.md"],
-  "autoAccept": true,
-  "preferredEditor": "cursor",
-  "hideBanner": true,
-  "maxSessionTurns": 50,
-  "usageStatisticsEnabled": false
+  "privacy": {
+    "usageStatisticsEnabled": false
+  },
+  "ide": {
+    "enabled": true
+  }
 }
