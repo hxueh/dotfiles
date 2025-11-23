@@ -33,13 +33,14 @@ return {
     {
       "L3MON4D3/LuaSnip",
       optional = true,
-    }
+    },
   },
   config = function()
     require("beancount").setup({
       python_path = ".venv/bin/python",
       main_bean_file = "main.bean",
       separator_column = 70,
+      auto_fill_amounts = true,
     })
   end,
 }
