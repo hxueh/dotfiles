@@ -5,16 +5,11 @@
     "DISABLE_AUTOUPDATER": "1"
   },
   "permissions": {
-    "deny": [
-      "Read(*.bean)",
-      "Edit(*.bean)",
-      "MultiEdit(*.bean)"
-    ],
     "defaultMode": "plan"
   },
-  "enableAllProjectMcpServers": true,
   "statusLine": {
     "type": "command",
     "command": "~/.claude/statusline.sh"
-  }
+  },
+  "model": "opus"
 }
