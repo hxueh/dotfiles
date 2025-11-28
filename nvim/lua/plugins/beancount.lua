@@ -1,6 +1,7 @@
 return {
   "hxueh/beancount.nvim",
   ft = { "beancount", "bean" },
+  branch = "main",
   dependencies = {
     {
       "nvim-treesitter/nvim-treesitter",

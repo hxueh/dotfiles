@@ -7,9 +7,10 @@
   "permissions": {
     "defaultMode": "plan"
   },
+  "model": "opus",
   "statusLine": {
     "type": "command",
     "command": "~/.claude/statusline.sh"
   },
-  "model": "opus"
+  "alwaysThinkingEnabled": true
 }
