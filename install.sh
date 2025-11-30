@@ -19,10 +19,6 @@ ln -sf "$PWD/starship/starship.toml" "$HOME/.config/starship.toml"
 ln -sf "$PWD/git/gitconfig" "$HOME/.gitconfig"
 ln -sf "$PWD/git/gitignore" "$HOME/.gitignore_global"
 
-# gomi
-rm -rf "$HOME/.config/gomi"
-ln -sf "$PWD/gomi" "$HOME/.config/gomi"
-
 # Ghostty
 rm -rf "$HOME/.config/ghostty"
 ln -sf "$PWD/ghostty" "$HOME/.config/ghostty"
