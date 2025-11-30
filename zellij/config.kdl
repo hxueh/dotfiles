@@ -1,0 +1,18 @@
+// Start in lock mode to avoid keybinding conflicts
+// Press Ctrl+g to unlock and access zellij commands
+default_mode "locked"
+
+// Quit zellij when the last session closes
+on_force_close "quit"
+
+// Whether to show tips on startup
+show_startup_tips false
+
+// Show release notes on first run of a new version.
+show_release_notes false
+
+// Toggle between having pane frames around the panes
+pane_frames false
+
+// Command to use for copying text to the clipboard on macOS.
+copy_command "pbcopy"
