@@ -151,11 +151,11 @@ if [[ ! -f "$HOMEBREW_PREFIX/bin/procs" ]]; then
 fi
 alias ps="$HOMEBREW_PREFIX/bin/procs"
 
-# gomi
-if [[ ! -f "$HOMEBREW_PREFIX/bin/gomi" ]]; then
-	brew install -q gomi
+# rmtrash
+if [[ ! -f "$HOMEBREW_PREFIX/bin/rmtrash" ]]; then
+	brew install -q rmtrash
 fi
-alias rm="$HOMEBREW_PREFIX/bin/gomi"
+alias rm="$HOMEBREW_PREFIX/bin/rmtrash"
 
 # gping
 if [[ ! -f "$HOMEBREW_PREFIX/bin/gping" ]]; then
