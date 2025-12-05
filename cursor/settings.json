@@ -141,6 +141,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   // JSON
+  "json.schemaDownload.enable": true,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
