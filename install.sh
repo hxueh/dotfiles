@@ -2,7 +2,7 @@
 
 # Install Homebrew
 if ! command -v brew >/dev/null 2>&1; then
-  /bin/bash -c "$(curl -fsSL https://cdn.jsdelivr.net/gh/Homebrew/install@master/install.sh)"
+	/bin/bash -c "$(curl -fsSL https://cdn.jsdelivr.net/gh/Homebrew/install@master/install.sh)"
 fi
 
 # Create config folder
@@ -52,6 +52,9 @@ ln -sf "$PWD/wakatime/wakatime.cfg" "$HOME/.wakatime.cfg"
 # GnuPG
 mkdir -p "$HOME/.gnupg"
 ln -sf "$PWD/gnupg/gpg-agent.conf" "$HOME/.gnupg/gpg-agent.conf"
+
+# Homebrew
+ln -sf "$PWD/homebrew" "$HOME/.config/homebrew"
 
 # Claude Code
 mkdir -p "$HOME/.claude"
