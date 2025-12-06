@@ -1,28 +1,23 @@
 {
-  "tools": {
-    "autoAccept": true
-  },
+  "$schema": "https://raw.githubusercontent.com/google-gemini/gemini-cli/main/schemas/settings.schema.json",
   "context": {
     "fileName": ["AGENTS.md"]
   },
-  "ui": {
-    "hideBanner": true,
-    "theme": "GitHub",
-    "hideTips": true,
-    "hideContextSummary": true,
-    "showMemoryUsage": true,
-    "accessibility": {
-      "disableLoadingPhrases": true
-    }
+  "general": {
+    "disableAutoUpdate": true,
+    "enablePromptCompletion": true,
+    "previewFeatures": true
+  },
+  "ide": {
+    "enabled": true
   },
   "model": {
+    "compressionThreshold": 0.5,
     "maxSessionTurns": 50,
-    "compressionThreshold": 0.5
+    "name": "gemini-3-pro-preview"
   },
-  "general": {
-    "preferredEditor": "cursor",
-    "disableAutoUpdate": true,
-    "enablePromptCompletion": true
+  "privacy": {
+    "usageStatisticsEnabled": false
   },
   "security": {
     "auth": {
@@ -32,10 +27,16 @@
   "telemetry": {
     "enabled": false
   },
-  "privacy": {
-    "usageStatisticsEnabled": false
+  "tools": {
+    "autoAccept": true
   },
-  "ide": {
-    "enabled": true
+  "ui": {
+    "accessibility": {
+      "disableLoadingPhrases": true
+    },
+    "hideBanner": true,
+    "hideContextSummary": true,
+    "hideTips": true,
+    "showMemoryUsage": true
   }
 }
