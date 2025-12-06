@@ -1,5 +1,5 @@
-# Skip loading in Claude Code, Cursor Agent and Codex Cli
-if [[ -n "$CLAUDECODE" || -n "$CURSOR_AGENT" || -n "$CODEX_SANDBOX" ]]; then
+# Skip loading in Claude Code, Cursor Agent, Codex Cli and Antigravity
+if [[ -n "$CLAUDECODE" || -n "$CURSOR_AGENT" || -n "$CODEX_SANDBOX" || -n "$ANTIGRAVITY_AGENT" ]]; then
 	return
 fi
 
