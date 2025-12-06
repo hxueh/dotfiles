@@ -1,0 +1,38 @@
+# Editor
+export EDITOR="vim"
+
+# XDG_CONFIG_HOME
+export XDG_CONFIG_HOME="$HOME/.config"
+
+# Flask
+export FLASK_RUN_PORT=6000
+export FLASK_APP="manage.py"
+export FLASK_DEBUG=1
+
+# Golang
+export GOPATH="$HOME/.local/share/gopath"
+export GO111MODULE="on"
+export GOPROXY="https://goproxy.cn"
+
+# Homebrew
+export HOMEBREW_BUNDLE_FILE="$HOME/.config/homebrew/Brewfile"
+export HOMEBREW_NO_ENV_HINTS=1
+export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles"
+export HOMEBREW_CASK_OPTS="--appdir=$HOME/Applications"
+if [ -f "/opt/homebrew/bin/brew" ]; then
+	eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
+# Local PATH
+export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$GOPATH/bin"
+
+# GPG
+export GPG_TTY="$(tty)"
+
+# Zellij
+export ZELLIJ_AUTO_ATTACH="true"
+export ZELLIJ_AUTO_EXIT="true"
+
+# Codex
+export CODEX_HOME="$HOME/.config/codex"

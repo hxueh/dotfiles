@@ -9,6 +9,7 @@ fi
 mkdir -p "$HOME/.config"
 
 # Zsh
+ln -sf "$PWD/zsh/zprofile" "$HOME/.zprofile"
 ln -sf "$PWD/zsh/zshrc-homebrew.zsh" "$HOME/.zshrc"
 ln -sf "$PWD/zsh/zshenv" "$HOME/.zshenv"
 
