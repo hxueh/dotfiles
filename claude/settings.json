@@ -1,16 +1,17 @@
 {
+  "alwaysThinkingEnabled": true,
   "cleanupPeriodDays": 10,
   "env": {
     "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
     "DISABLE_AUTOUPDATER": "1"
   },
+  "includeCoAuthoredBy": false,
+  "model": "opus",
   "permissions": {
     "defaultMode": "plan"
   },
-  "model": "opus",
   "statusLine": {
-    "type": "command",
-    "command": "~/.claude/statusline.sh"
-  },
-  "alwaysThinkingEnabled": true
+    "command": "~/.claude/statusline.sh",
+    "type": "command"
+  }
 }
